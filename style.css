@@ -261,12 +261,12 @@
   @media (max-width:900px){
     .prod-grid{ display:flex; overflow-x:auto; scroll-snap-type:x mandatory; gap:14px; margin-top:28px; padding:2px 2px 12px; scrollbar-width:none; }
     .prod-grid::-webkit-scrollbar{ display:none; }
-    .product-card{ min-width:0; flex:0 0 78vw; scroll-snap-align:start; }
+    .product-card{ min-width:0; flex:0 0 72vw; scroll-snap-align:center; }
     .product-card .btn{ white-space:normal; text-align:center; }
-    .product-card.featured{ flex:0 0 88vw; flex-direction:column; }
+    .product-card.featured{ flex:0 0 80vw; flex-direction:column; }
     .product-card.featured .pf-ph{ flex:0 0 180px; }
   }
-  @media (max-width:420px){ .product-card{ flex-basis:86vw; } .product-card.featured{ flex-basis:92vw; } }
+  @media (max-width:420px){ .product-card{ flex-basis:78vw; } .product-card.featured{ flex-basis:84vw; } }
 
   /* ---------- Process: one uniform column, every row aligned the same way ---------- */
   .process-wrap{ display:flex; flex-direction:column; margin-top:8px; }
