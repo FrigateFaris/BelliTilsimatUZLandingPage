@@ -4,7 +4,7 @@
     phone1:'+998 50 900 51 94',
     phone2:'+998 77 097 14 37',
     phoneHref:'+998509005194',
-    email:'info@bellitilsimat.uz',
+    email:'info@ideyaplus.uz',
     telegram:'bellitilsimat_uz',
     whatsapp:'998509005194'
   };
