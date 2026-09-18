@@ -5,7 +5,8 @@
     phone2:'+998 77 097 14 37',
     phoneHref:'+998509005194',
     email:'info@ideyaplus.uz',
-    telegram:'bellitilsimat_uz',
+    telegramPersonal1:'gkrop26',
+    telegramPersonal2:'far_akhm',
     whatsapp:'998509005194'
   };
   // Google Apps Script Web App URL that appends a row to the leads spreadsheet.
@@ -231,6 +232,7 @@
     document.getElementById('langRu').setAttribute('aria-pressed', l==='ru');
     document.getElementById('langUz').setAttribute('aria-pressed', l==='uz');
     renderPhone();
+    renderTelegram();
   }
   window.setLang = applyLang;
 
@@ -241,6 +243,15 @@
     el.innerHTML =
       CONTACT.phone1 + ' <span class="phone-role">— ' + d.phoneRole1 + '</span><br>' +
       CONTACT.phone2 + ' <span class="phone-role">— ' + d.phoneRole2 + '</span>';
+  }
+
+  function renderTelegram(){
+    var el = document.getElementById('infoTelegram');
+    if(!el) return;
+    var d = T[lang];
+    el.innerHTML =
+      '<a href="https://t.me/' + CONTACT.telegramPersonal1 + '" target="_blank" rel="noopener">@' + CONTACT.telegramPersonal1 + '</a> <span class="phone-role">— ' + d.phoneRole1 + '</span><br>' +
+      '<a href="https://t.me/' + CONTACT.telegramPersonal2 + '" target="_blank" rel="noopener">@' + CONTACT.telegramPersonal2 + '</a> <span class="phone-role">— ' + d.phoneRole2 + '</span>';
   }
 
   // ---- lead capture ----
@@ -296,7 +307,7 @@
     if(message) lines.push((lang==='ru'?'Сообщение':'Xabar') + ': ' + message);
     var text = encodeURIComponent(lines.join('\n'));
 
-    var tgHref = 'https://t.me/' + CONTACT.telegram + '?text=' + text;
+    var tgHref = 'https://t.me/' + CONTACT.telegramPersonal1 + '?text=' + text;
     var waHref = 'https://wa.me/' + CONTACT.whatsapp + '?text=' + text;
     var callHref = 'tel:' + CONTACT.phoneHref;
 
