@@ -8,6 +8,9 @@
     telegram:'bellitilsimat_uz',
     whatsapp:'998509005194'
   };
+  // Google Apps Script Web App URL that appends a row to the leads spreadsheet.
+  // Deploy the script from README-google-sheet-setup.md and paste the /exec URL here.
+  var SHEET_WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbxF70cI0CebwT2CeM89QXsWBc3EzhkuIYskUN6Hr3NktPEX2XCLH4s5A1EIv_oy8NZ_/exec';
 
   var PRODUCTS = [
     {key:'p4', icon:'<path d="M12 2 3 7l9 5 9-5-9-5Z"/><path d="M3 12l9 5 9-5"/><path d="M3 17l9 5 9-5"/>', featured:true},
@@ -272,6 +275,15 @@
     var company = (data.get('company')||'').toString().trim();
     var product = productLabel((data.get('product')||'').toString());
     var message = (data.get('message')||'').toString().trim();
+
+    if(SHEET_WEBHOOK_URL.indexOf('PASTE_YOUR') === -1){
+      fetch(SHEET_WEBHOOK_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {'Content-Type': 'text/plain;charset=utf-8'},
+        body: JSON.stringify({name:name, phone:phone, email:email, company:company, product:product, message:message})
+      }).catch(function(){});
+    }
 
     var lines = [
       'Belli Tilsimat UZ — ' + (lang==='ru' ? 'заявка с сайта' : 'saytdan ariza'),
