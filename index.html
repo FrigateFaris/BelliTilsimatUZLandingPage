@@ -1,270 +1,274 @@
 <!DOCTYPE html>
-<html lang="ru" class="no-js">
+<html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>IDEYA PLUS</title>
 <meta name="description" content="Belli Tilsimat — генеральный партнёр компании IDEYA PLUS&#10;100+ внедрений 1С — в Туркменистане. Теперь мы готовы оказывать свои услуги в Узбекистане.">
-<meta name="theme-color" content="#15120c">
-<link rel="canonical" href="https://ideyaplus.uz/">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="IDEYA PLUS">
-<meta property="og:url" content="https://ideyaplus.uz/">
-<meta property="og:title" content="IDEYA PLUS">
-<meta property="og:description" content="Belli Tilsimat — генеральный партнёр компании IDEYA PLUS&#10;100+ внедрений 1С — в Туркменистане. Теперь мы готовы оказывать свои услуги в Узбекистане.">
 <!--
-  BUSINESS DATA — contacts live in CONTACT{} near the top of script.js.
+  BUSINESS DATA — contacts live in CONTACT{} near the bottom of script.js.
 -->
-<script>document.documentElement.className='js';</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap">
 <link rel="stylesheet" href="style.css">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"IDEYA PLUS","legalName":"ООО «IDEYA PLUS»","url":"https://ideyaplus.uz/","logo":"https://ideyaplus.uz/images/nav-logo.png","email":"info@ideyaplus.uz","telephone":"+998770971437","areaServed":"UZ","description":"Внедрение, настройка и сопровождение 1С для бизнеса"}
-</script>
 </head>
 <body>
-<a class="skip" href="#main">Перейти к содержимому</a>
-<div class="progress" id="progress" aria-hidden="true"></div>
-<div class="grain" aria-hidden="true"></div>
+<div class="site">
 
-<!-- Mobile nav -->
-<nav class="mnav" id="mnav" aria-hidden="true">
-  <div class="mnav-top"><button class="mnav-close" id="mnavClose" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg></button></div>
-  <a href="#about" data-i18n="navAbout" class="mnav-link">О нас</a>
-  <a href="#products" data-i18n="navServices" class="mnav-link">Решения</a>
-  <a href="#process" data-i18n="navProcess" class="mnav-link">Как работаем</a>
-  <a href="#cases" data-i18n="navCases" class="mnav-link">Проекты</a>
-  <a href="#contact" data-i18n="navContact" class="mnav-link">Контакты</a>
-  <button class="btn btn-primary" onclick="openLead('')"><span data-i18n="ctaShort">Бесплатный аудит</span></button>
-</nav>
+  <!-- Mobile nav -->
+  <nav class="mnav" id="mnav" aria-hidden="true">
+    <div class="mnav-top"><button class="mnav-close" id="mnavClose" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg></button></div>
+    <a href="#about" data-i18n="navAbout" class="mnav-link">О компании</a>
+    <a href="#products" data-i18n="navServices" class="mnav-link">Продукты 1С</a>
+    <a href="#process" data-i18n="navProcess" class="mnav-link">Как мы работаем</a>
+    <a href="#learn" data-i18n="navLearn" class="mnav-link">Обучение</a>
+    <a href="#testimonials" data-i18n="navReviews" class="mnav-link">Отзывы</a>
+    <a href="#contact" data-i18n="navContact" class="mnav-link">Контакты</a>
+    <button class="btn btn-primary" onclick="openLead('')"><span data-i18n="ctaShort">Оставить заявку</span></button>
+  </nav>
 
-<!-- Nav bar -->
-<header class="nav-float" id="navFloat">
-  <div class="nav-inner">
-    <a href="#top" class="brand" aria-label="IDEYA PLUS">
-      <span class="brand-mark"><img src="images/nav-logo.png" alt="" width="34" height="34"></span>
-      <span class="brand-name">IDEYA PLUS</span>
-    </a>
-    <nav class="nav" aria-label="Main">
-      <a href="#about" data-i18n="navAbout">О нас</a>
-      <a href="#products" data-i18n="navServices">Решения</a>
-      <a href="#process" data-i18n="navProcess">Как работаем</a>
-      <a href="#cases" data-i18n="navCases">Проекты</a>
-      <a href="#contact" data-i18n="navContact">Контакты</a>
-    </nav>
-    <div class="nav-actions">
-      <a class="nav-phone" id="navPhone" href="tel:+998770971437">+998 77 097 14 37</a>
-      <div class="lang-switch" role="group" aria-label="Language">
-        <button id="langRu" aria-pressed="true" onclick="setLang('ru')">RU</button>
-        <button id="langUz" aria-pressed="false" onclick="setLang('uz')">UZ</button>
-      </div>
-      <button class="btn btn-primary btn-sm nav-cta" onclick="openLead('')" data-magnetic><span data-i18n="ctaShort">Бесплатный аудит</span></button>
-      <button class="burger" id="burger" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg></button>
-    </div>
-  </div>
-</header>
-
-<main id="main">
-
-  <!-- ============ HERO ============ -->
-  <section class="hero" id="top">
-    <img class="hero-bg" src="images/hero-bg.webp" alt="IDEYA PLUS и Belli Tilsimat — партнёрство, Туркменистан → Узбекистан" data-depth="-0.04">
-    <div class="hero-scrim"></div>
-    <span class="ghost hero-ghost" aria-hidden="true" data-depth="-0.07">1C</span>
-    <div class="hero-body wrap">
-      <div class="hero-copy">
-        <p class="pill hero-in" data-i18n="heroPill">Belli Tilsimat — генеральный партнёр компании IDEYA PLUS</p>
-        <h1 class="hero-h1">
-          <span class="ln" data-i18n="heroT1" data-split>Автоматизируем бизнес на 1С</span>
-          <span class="ln amber" data-i18n="heroT2" data-split>под ключ</span>
-        </h1>
-        <p class="hero-sub hero-in" data-i18n="heroSub">Аудит, внедрение, настройка и сопровождение. 10 лет опыта и 100+ проектов — теперь для компаний Узбекистана.</p>
-        <div class="hero-ctas hero-in">
-          <button class="btn btn-primary btn-lg" onclick="openLead('')" data-magnetic><span data-i18n="heroCta1">Получить бесплатный аудит</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </button>
-          <a class="btn btn-ghost on-dark btn-lg" href="#products"><span data-i18n="heroCta2">Смотреть решения</span></a>
+  <!-- Nav bar -->
+  <div class="nav-float" id="navFloat">
+    <div class="nav-track">
+    <div class="nav-inner">
+      <a href="#top" class="brand" aria-label="IDEYA PLUS">
+        <span class="brand-mark"><img src="images/nav-logo.png" alt=""></span>
+        IDEYA PLUS
+      </a>
+      <nav class="nav">
+        <a href="#about" data-i18n="navAbout">О компании</a>
+        <a href="#products" data-i18n="navServices">Продукты 1С</a>
+        <a href="#learn" data-i18n="navLearn">Обучение</a>
+        <a href="#process" data-i18n="navProcess">Как мы работаем</a>
+        <a href="#testimonials" data-i18n="navReviews">Отзывы</a>
+        <a href="#contact" data-i18n="navContact">Контакты</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button id="langRu" aria-pressed="true" onclick="setLang('ru')">RU</button>
+          <button id="langUz" aria-pressed="false" onclick="setLang('uz')">UZ</button>
         </div>
-        <ul class="chips hero-in">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="chip1">Франчайзи 1С в Туркменистане</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="chip2">Резидент IT Park Uzbekistan</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="chip3">Ответим в течение рабочего дня</span></li>
-        </ul>
+        <button class="burger" id="burger" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg></button>
       </div>
     </div>
-    <div class="hero-stats hero-in">
-      <div class="wrap hero-stats-in">
-        <div class="hstat"><b data-count="100" data-suffix="+">100+</b><span data-i18n="hs1">проектов на 1С</span></div>
-        <div class="hstat"><b data-count="10">10</b><span data-i18n="hs2">лет опыта с 1С</span></div>
-        <div class="hstat"><b data-count="50" data-suffix="+">50+</b><span data-i18n="hs3">сотрудников в команде</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ MARQUEE BAND ============ -->
-  <div class="band-marquee" aria-hidden="true">
-    <div class="mq-track" id="mqTrack">
-      <span>1С:ERP</span><i>✦</i><span class="o">Управление торговлей</span><i>✦</i><span>Розница</span><i>✦</i><span class="o">Бухгалтерия</span><i>✦</i><span>УНФ</span><i>✦</i><span class="o">Документооборот</span><i>✦</i><span>ИТС</span><i>✦</i><span class="o">AI+</span><i>✦</i><span>EDI</span><i>✦</i>
     </div>
   </div>
 
-  <!-- ============ LIGHT ZONE: pain → why us → solutions ============ -->
-  <div class="zone zone-light">
+  <main id="top">
 
-    <!-- PAIN -->
-    <section class="sec" id="pain">
-      <div class="wrap">
-        <div class="sec-head rv">
-          <p class="eyebrow" data-i18n="painEyebrow">Знакомая ситуация</p>
-          <h2 data-i18n="painTitle" data-split>Когда бизнес растёт быстрее, чем учёт</h2>
-          <p class="lede" data-i18n="painSub">Если вы узнали себя хотя бы в одном пункте — мы знаем, как это исправить.</p>
-        </div>
-        <div class="pain-grid stagger">
-          <article class="pain-card spot">
-            <span class="pain-n">01</span>
-            <h3 data-i18n="pain1t">Учёт в Excel и ручные сверки</h3>
-            <p data-i18n="pain1d">Данные дублируются, цифры расходятся, на отчёты уходят дни.</p>
-            <div class="pain-fix"><span class="fix-lbl" data-i18n="painLbl">Решение</span><p data-i18n="pain1r">Единая база: данные вводятся один раз и видны всем.</p></div>
-          </article>
-          <article class="pain-card spot">
-            <span class="pain-n">02</span>
-            <h3 data-i18n="pain2t">Нет цельной картины по складу и деньгам</h3>
-            <p data-i18n="pain2d">Остатки, продажи и финансы живут в разных файлах и головах.</p>
-            <div class="pain-fix"><span class="fix-lbl" data-i18n="painLbl">Решение</span><p data-i18n="pain2r">Остатки, продажи и финансы — в одной системе и одном отчёте.</p></div>
-          </article>
-          <article class="pain-card spot">
-            <span class="pain-n">03</span>
-            <h3 data-i18n="pain3t">1С есть, но «не работает» как нужно</h3>
-            <p data-i18n="pain3d">Конфигурация типовая, процессы нестандартные, сотрудники обходят систему.</p>
-            <div class="pain-fix"><span class="fix-lbl" data-i18n="painLbl">Решение</span><p data-i18n="pain3r">Настроим и доработаем 1С под то, как работает ваша компания.</p></div>
-          </article>
-          <article class="pain-card spot">
-            <span class="pain-n">04</span>
-            <h3 data-i18n="pain4t">Рост упирается в ручные операции</h3>
-            <p data-i18n="pain4d">Каждый новый клиент или склад — это ещё больше рутины.</p>
-            <div class="pain-fix"><span class="fix-lbl" data-i18n="painLbl">Решение</span><p data-i18n="pain4r">Автоматизируем рутину — команда занимается делом, а не таблицами.</p></div>
-          </article>
+    <!-- Hero: full-bleed -->
+    <section class="hero" id="hero-panel">
+      <img class="hero-bg" src="images/hero-bg.webp" alt="IDEYA PLUS и Belli Tilsimat — партнёрство, Туркменистан → Узбекистан">
+      <div class="hero-scrim"></div>
+      <span class="ghost hero-ghost" data-depth="-0.05">UZBEKISTAN</span>
+      <div class="grid hero-grid">
+        <div class="hero-top g-hero-text">
+          <p class="eyebrow" data-i18n="heroEyebrow">10 лет опыта с «1С» в Туркменистане</p>
+          <h1><span data-i18n="heroTitle1">Belli Tilsimat — генеральный партнёр</span> <span class="hl" data-i18n="heroTitle2">компании IDEYA PLUS</span></h1>
+          <p class="lede" data-i18n="heroSub">100+ внедрений 1С — в Туркменистане.
+Теперь мы готовы оказывать свои услуги в Узбекистане.</p>
+          <div class="hero-ctas">
+            <button class="btn btn-primary btn-lg" onclick="openLead('')"><span data-i18n="heroCta1">Оставить заявку на консультацию</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+            <a class="btn btn-ghost on-dark" href="#products"><span data-i18n="heroCta2">Смотреть продукты 1С</span></a>
+          </div>
+          <div class="trust-badges">
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="badge1">Франчайзи 1С в Туркменистане</span></span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="badge2">Резидент IT Park Uzbekistan</span></span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="badge3">Выгодные условия по локальным прайсам Туркменистана</span></span>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- WHY US (bento) -->
-    <section class="sec sec-tight" id="about">
+    <!-- Light zone: About -> History -> Status -> Products, one shared background -->
+    <div class="zone zone-light">
+    <!-- About: plain, continuous -->
+    <section class="band" id="about">
       <div class="wrap">
-        <div class="sec-head rv">
-          <p class="eyebrow" data-i18n="aboutEyebrow">Почему мы</p>
-          <h2 data-i18n="aboutTitle" data-split>Команда, которая отвечает за результат проекта</h2>
-          <p class="lede" data-i18n="aboutLead">Не просто «настроим программу» — доведём автоматизацию до рабочего результата и останемся рядом после запуска.</p>
+        <div class="about-head rv">
+          <p class="eyebrow" data-i18n="aboutEyebrow">О компании</p>
+          <h2 data-i18n="aboutTitle">Реальная автоматизация бизнеса — теперь и для Узбекистана</h2>
         </div>
-        <div class="bento stagger">
-          <div class="tile dark s2 t-years spot">
-            <div class="big" data-count="10">10</div>
-            <div class="tile-body"><h3 data-i18n="tYears">лет на рынке 1С</h3><p data-i18n="tYearsD">Начинали с экосистемой 1С в России, 10 лет работаем в Туркменистане.</p></div>
+        <div class="about-layout">
+          <div class="about-primary rv">
+            <p class="about-lead" data-i18n="aboutLead">Стоимость внедрения и сопровождения — по прайсам туркменского рынка, без наценок как «для иностранного клиента», тем самым вы получаете экономию в десятки тысяч долларов.</p>
+            <p class="about-secondary" data-i18n="aboutText">Помогаем бизнесу Центральной Азии внедрять и обслуживать 1С — от малого до крупного бизнеса.</p>
+            <a class="btn btn-primary" style="margin-top:22px;align-self:flex-start" href="#contact"><span data-i18n="aboutCta">Обсудить ваш проект</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
           </div>
-          <div class="tile amber t-proj spot">
-            <div class="big" data-count="100" data-suffix="+">100+</div>
-            <div class="tile-body"><h3 data-i18n="tProj">реализованных проектов</h3><p data-i18n="tProjD">От небольших ИП до промышленных предприятий и торговых сетей.</p></div>
-          </div>
-          <div class="tile t-park spot">
-            <div class="tile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18"/><path d="M5 21V9l7-5 7 5v12"/><path d="M9 21v-6h6v6"/></svg></div>
-            <div class="tile-body"><h3 data-i18n="tPark">Резидент IT Park Uzbekistan</h3><p data-i18n="tParkD">Работаем в Узбекистане как зарегистрированная компания — прозрачно и по местному законодательству.</p></div>
-          </div>
-          <div class="tile t-fr spot">
-            <div class="tile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 6v6c0 5 4 9 9 10 5-1 9-5 9-10V6l-9-4Z"/><path d="m9 12 2 2 4-4"/></svg></div>
-            <div class="tile-body"><h3 data-i18n="tFranch">Официальный франчайзи «1С»</h3><p data-i18n="tFranchD">Статус Belli Tilsimat в Туркменистане: прямой доступ к экосистеме 1С и сертифицированная команда.</p></div>
-          </div>
-          <div class="tile s2 t-partner spot">
-            <div class="partner-pair"><img src="images/status-ideyaplus-logo.png" alt="IDEYA PLUS" loading="lazy"><span>×</span><b>Belli<br>Tilsimat</b></div>
-            <div class="tile-body"><h3 data-i18n="tPartner">Партнёрство IDEYA PLUS × Belli Tilsimat</h3><p data-i18n="tPartnerD">В рамках партнёрства с IDEYA PLUS компания Belli Tilsimat предлагает и реализует решения на базе 1С на рынке Узбекистана.</p></div>
-          </div>
-          <div class="tile t-one spot">
-            <div class="tile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg></div>
-            <div class="tile-body"><h3 data-i18n="tOne">Один ответственный контакт</h3><p data-i18n="tOneD">Проект ведёт единая команда. У вас одна точка связи, а при необходимости мы заменим сотрудника.</p></div>
-          </div>
-          <div class="tile t-focus spot">
-            <div class="tile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r=".6" fill="currentColor"/></svg></div>
-            <div class="tile-body"><h3 data-i18n="tFocus">Только 1С</h3><p data-i18n="tFocusD">Специализируемся исключительно на 1С — глубоко знаем продукт и типовые задачи отраслей.</p></div>
-          </div>
-          <div class="tile t-lic spot">
-            <div class="tile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="5"/><path d="m8.5 12.5-1 8 4.5-2.5 4.5 2.5-1-8"/></svg></div>
-            <div class="tile-body"><h3 data-i18n="tLic">Лицензии — у официальных партнёров</h3><p data-i18n="tLicD">Лицензии 1С приобретаются отдельно у официальных партнёров в Узбекистане — подскажем, что именно нужно.</p></div>
-          </div>
-          <div class="tile dark s2 t-geo">
-            <img class="geo-map" src="images/geography-map.webp" alt="" loading="lazy" data-depth="0.03">
-            <svg class="geo-route" viewBox="0 0 400 110" aria-hidden="true"><path d="M28 78 C 90 78, 120 30, 200 40 S 320 90, 372 58" /><circle cx="28" cy="78" r="6"/><circle cx="200" cy="40" r="6"/><circle cx="372" cy="58" r="6"/></svg>
-            <div class="geo-labels">
-              <div><b data-i18n="geo1t">Россия</b><span data-i18n="geo1d">школа экспертизы</span></div>
-              <div><b data-i18n="geo2t">Туркменистан</b><span data-i18n="geo2d">10 лет и статус франчайзи</span></div>
-              <div><b data-i18n="geo3t">Узбекистан</b><span data-i18n="geo3d">новый рынок, тот же подход</span></div>
+          <div class="about-facts stagger">
+            <div class="fact-card">
+              <div class="fact-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 6v6c0 5 4 9 9 10 5-1 9-5 9-10V6l-9-4Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+              <h3 data-i18n="val1t">Официальный франчайзи «1С» в Туркменистане</h3><p data-i18n="val1d">Работаем напрямую в экосистеме 1С — без посредников: сертифицированные консультанты и прямой доступ к обновлениям.</p>
+            </div>
+            <div class="fact-card">
+              <div class="fact-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="5"/><path d="m8.5 12.5-1 8 4.5-2.5 4.5 2.5-1-8"/></svg></div>
+              <h3 data-i18n="val2t">Лицензии — у официальных партнёров</h3><p data-i18n="val2d">Лицензии 1С клиенты приобретают отдельно у официальных партнёров в Узбекистане.</p>
+            </div>
+            <div class="fact-card">
+              <div class="fact-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18"/><path d="M5 21V9l7-5 7 5v12"/><path d="M9 21v-6h6v6"/></svg></div>
+              <h3 data-i18n="val3t">Резидент IT Park Uzbekistan</h3><p data-i18n="val3d">Официальный юридический статус в национальном IT-парке — прозрачная работа и понятные договорные условия.</p>
+            </div>
+            <div class="fact-card accent">
+              <div class="fact-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m7 14 4-4 3 3 5-6"/></svg></div>
+              <h3 data-i18n="val4t">100+ реализованных проектов</h3><p data-i18n="val4d">Розница, производство, строительство, медицина, логистика — опыт разных отраслей.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SOLUTIONS -->
-    <section class="sec" id="products">
-      <div class="wrap">
-        <div class="sec-head rv">
-          <p class="eyebrow" data-i18n="prodEyebrow">Решения</p>
-          <h2 data-i18n="prodTitle" data-split>Решения 1С под задачи вашего бизнеса</h2>
-          <p class="lede" data-i18n="prodSub">Автоматизируем учёт и процессы на базе 1С.</p>
+    <!-- Geography: visual map with three markers, route line animates in on scroll -->
+    <section class="geo-section" id="geography">
+      <span class="ghost ink geo-ghost">ROUTE</span>
+      <div class="wrap geo-head rv">
+        <p class="eyebrow" data-i18n="geoEyebrow">География работы</p>
+        <h2 data-i18n="geoTitle">От первого рынка — к Туркменистану и Узбекистану</h2>
+        <p class="lede" data-i18n="geoSub">Каждый новый рынок — новый экзамен на компетентность. В Туркменистане, а теперь и в Узбекистане.</p>
+      </div>
+      <div class="wrap geo-layout rv" id="geoLayout">
+        <div class="geo-map">
+          <img src="images/geography-map.webp" alt="Карта: Россия, Туркменистан, Узбекистан" loading="lazy">
         </div>
+        <div class="geo-list stagger">
+          <div class="geo-item">
+            <span class="geo-flag">🇷🇺</span>
+            <div>
+              <span class="geo-tag">01</span>
+              <h3 data-i18n="geo1t">Россия — школа экспертизы</h3>
+              <p data-i18n="geo1d">Здесь мы начали работать с экосистемой «1С», прошли сертификацию и сформировали стандарты внедрения, которые используем до сих пор.</p>
+            </div>
+          </div>
+          <div class="geo-item">
+            <span class="geo-flag">🇹🇲</span>
+            <div>
+              <span class="geo-tag">02</span>
+              <h3 data-i18n="geo2t">Туркменистан — 10 лет и статус франчайзи</h3>
+              <p data-i18n="geo2d">Стали официальным франчайзи «1С» в стране и реализовали 100+ проектов — от небольших ИП до промышленных предприятий и торговых сетей.</p>
+            </div>
+          </div>
+          <div class="geo-item">
+            <span class="geo-flag">🇺🇿</span>
+            <div>
+              <span class="geo-tag">03</span>
+              <h3 data-i18n="geo3t">Узбекистан — новый рынок, тот же подход</h3>
+              <p data-i18n="geo3d">Открылись как резидент IT Park Uzbekistan и переносим весь опыт на локальный рынок — с учётом специфики Узбекистана.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Official status: plain, sits directly on the page background -->
+    <section class="band" id="status">
+      <div class="wrap rv">
+        <p class="eyebrow" data-i18n="statusEyebrow">Официальный статус</p>
+        <h2 data-i18n="statusTitle">Почему нам можно доверять с первого дня</h2>
+        <p class="lede" data-i18n="statusSub">Не просто обещания — реальный юридический и партнёрский статус, который можно проверить.</p>
+        <div class="status-cols stagger">
+          <div class="status-item">
+            <div class="logo-slot filled"><img src="images/status-1c-logo.png" alt="1С"></div>
+            <h3 data-i18n="status1t">Официальный франчайзи «1С» в Туркменистане</h3>
+            <p data-i18n="status1d">Входим в официальную партнёрскую сеть фирмы «1С»: сертифицированные специалисты и прямой доступ к обновлениям экосистемы.</p>
+          </div>
+          <div class="status-item">
+            <div class="logo-slot filled"><img src="images/status-itpark-logo.png" alt="IT Park Uzbekistan"></div>
+            <h3 data-i18n="status2t">Резидент IT Park Uzbekistan</h3>
+            <p data-i18n="status2d">Официально зарегистрированы в национальном технопарке — прозрачная работа по местному законодательству.</p>
+          </div>
+          <div class="status-item">
+            <div class="logo-slot filled"><img src="images/status-ideyaplus-logo.png" alt="IDEYA PLUS"></div>
+            <h3 data-i18n="status3t">Партнёр компании IDEYA PLUS</h3>
+            <p data-i18n="status3d">В рамках партнёрства с IDEYA PLUS компания Belli Tilsimat предлагает и реализует решения в области автоматизации бизнеса на базе 1С на рынке Узбекистана.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products: full-bleed -->
+    <section class="band" id="products">
+      <div class="wrap rv">
+        <p class="eyebrow" data-i18n="prodEyebrow">Услуги по 1С</p>
+        <h2 data-i18n="prodTitle">Решение под задачи вашего бизнеса</h2>
+        <p class="lede" data-i18n="prodSub">Подберём, внедрим и настроим конфигурацию 1С под ваши процессы — от учёта до управления всей компанией. Стоимость работ — на выгодных условиях туркменского рынка; лицензии 1С клиенты приобретают отдельно у официальных партнёров в Узбекистане.</p>
         <div class="prod-grid stagger" id="productGrid"></div>
       </div>
     </section>
-  </div>
+    </div><!-- /zone-light -->
 
-  <!-- ============ PROCESS (dark) ============ -->
-  <section class="sec dark-sec" id="process">
-    <div class="wrap">
-      <div class="sec-head rv">
+    <!-- Learning: standalone dark zone, right after Products -->
+    <div class="zone zone-dark">
+    <section class="band band-dark" id="learn">
+      <div class="grid learn-grid rv">
+        <div class="g-learn-l">
+          <p class="eyebrow" data-i18n="learnEyebrow">Центр сертифицированного обучения 1С</p>
+          <h2 data-i18n="learnTitle" style="color:var(--on-dark)">Учим работать в 1С — от кассира до директора</h2>
+          <p class="lede" data-i18n="learnText">Курсы для сотрудников и будущих специалистов 1С: от базовой работы с программой до администрирования и разработки конфигураций. Практика на реальных задачах, сертификат по итогам обучения.</p>
+          <div class="learn-chips">
+            <span data-i18n="learn1">Работа с программой</span>
+            <span data-i18n="learn2">Администрирование</span>
+            <span data-i18n="learn3">Разработка</span>
+            <span data-i18n="learn4">Сертификат</span>
+          </div>
+          <button class="btn btn-primary" style="margin-top:24px" onclick="openLead('learn')"><span data-i18n="learnCta">Записаться на обучение</span></button>
+        </div>
+        <div class="photo-fill learn-right g-learn-r" data-depth="-0.04" style="background-image:url(images/learn-photo.jpg)"></div>
+      </div>
+    </section>
+    </div><!-- /zone-dark -->
+
+    <!-- CTA band: its own light zone -->
+    <div class="zone zone-light">
+    <section class="band cta-band">
+      <span class="ghost ink cta-ghost" data-depth="-0.06">1C</span>
+      <div class="wrap rv">
+        <p class="eyebrow" style="justify-content:center" data-i18n="ctaBandEyebrow">Начните сейчас</p>
+        <h2 data-i18n="ctaBandTitle">Внедрение 1С на выгодных условиях туркменского рынка</h2>
+        <p class="lede" style="margin-left:auto;margin-right:auto" data-i18n="ctaBandText">Оставьте заявку, посчитаем стоимость в течение рабочего дня.</p>
+        <div class="hero-ctas" style="justify-content:center">
+          <button class="btn btn-primary btn-lg" onclick="openLead('')"><span data-i18n="ctaShort">Оставить заявку</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+    </div><!-- /zone-light -->
+
+    <!-- Process + Stats: one continuous dark zone -->
+    <div class="zone zone-dark">
+    <section class="band band-dark" id="process">
+      <div class="wrap rv">
         <p class="eyebrow" data-i18n="procEyebrow">Как мы работаем</p>
-        <h2 data-i18n="procTitle" data-split>Пять шагов от заявки до запуска системы</h2>
-        <p class="lede" data-i18n="procSub">Понятный путь без сюрпризов: на каждом шаге вы знаете, что происходит и что дальше.</p>
+        <h2 data-i18n="procTitle" style="color:var(--on-dark)">Пять шагов от заявки до запуска системы</h2>
+        <div class="process-wrap stagger" id="processList"></div>
+        <a class="btn btn-primary process-cta" href="#contact"><span data-i18n="procCta">Обсудить ваш проект</span></a>
       </div>
-      <div class="proc" id="proc">
-        <div class="proc-line"><i id="procFill"></i></div>
-        <div class="proc-list" id="processList"></div>
-      </div>
-      <div class="proc-cta rv"><button class="btn btn-primary btn-lg" onclick="openLead('')" data-magnetic><span data-i18n="procCta">Начать с бесплатного аудита</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============ CASES + REVIEWS + PARTNERS (light) ============ -->
-  <div class="zone zone-light2">
-    <section class="sec" id="cases">
+    <section class="band-dark" style="padding:0 0 84px">
       <div class="wrap">
-        <div class="sec-head rv">
-          <p class="eyebrow" data-i18n="caseEyebrow">Проекты</p>
-          <h2 data-i18n="caseTitle" data-split>Внедрения, которые уже работают</h2>
-          <p class="lede" data-i18n="caseSub">Подтверждённые проекты Belli Tilsimat в Туркменистане.</p>
+        <div class="stats-rows stagger" id="statsRows">
+          <div class="stat-row"><div class="lbl" data-i18n="stat1">реализованных проектов</div><div class="num" data-count="100">0</div></div>
+          <div class="stat-row"><div class="lbl" data-i18n="stat2">лет на рынке 1С</div><div class="num" data-count="10">0</div></div>
+          <div class="stat-row"><div class="lbl" data-i18n="stat3">специалистов в команде</div><div class="num" data-count="50">0</div></div>
+          <div class="stat-row"><div class="lbl" data-i18n="stat4">обученных пользователей</div><div class="num" data-count="3000">0</div></div>
         </div>
-        <div class="case-grid stagger">
-          <article class="case spot">
-            <span class="case-n">01</span>
-            <span class="case-chip" data-i18n="c1s">Морской транспорт</span>
-            <div><h3 data-i18n="c1n">Международный морской порт Туркменистана</h3><p class="case-p" data-i18n="c1p">1С:ERP Управление предприятием 2</p></div>
-          </article>
-          <article class="case spot">
-            <span class="case-n">02</span>
-            <span class="case-chip" data-i18n="c2s">Морской транспорт</span>
-            <div><h3 data-i18n="c2n">Торговый морской флот Туркменистана</h3><p class="case-p" data-i18n="c2p">1С:ERP Управление предприятием 2</p></div>
-          </article>
-          <article class="case spot">
-            <span class="case-n">03</span>
-            <span class="case-chip" data-i18n="c3s">Страхование</span>
-            <div><h3 data-i18n="c3n">Государственная страховая организация Туркменистана</h3><p class="case-p" data-i18n="c3p">1С:Бухгалтерия</p></div>
-          </article>
-        </div>
-        <div class="case-cta rv"><button class="btn btn-line" onclick="openLead('')"><span data-i18n="caseCta">Хочу такой же результат</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+      </div>
+    </section>
 
-        <div class="testi-head rv">
-          <div>
-            <p class="eyebrow" data-i18n="testiEyebrow">Отзывы</p>
-            <h3 class="h-md" data-i18n="testiTitle">Что говорят клиенты</h3>
+    </div><!-- /zone-dark -->
+
+    <!-- Light zone: Testimonials -> Partners -> Contact, one shared background -->
+    <div class="zone zone-light">
+    <!-- Testimonials: plain -->
+    <section class="band" id="testimonials">
+      <div class="wrap rv">
+        <div class="testi-head">
+          <div style="max-width:600px">
+            <p class="eyebrow" data-i18n="testiEyebrow">Нам доверяют</p>
+            <h2 data-i18n="testiTitle">Что говорят клиенты в регионе</h2>
             <p class="lede" data-i18n="testiIntro">Вот что говорят клиенты, которые уже автоматизировали бизнес с Belli Tilsimat в Туркменистане.</p>
           </div>
           <div class="testi-nav">
@@ -272,166 +276,158 @@
             <button onclick="scrollTesti(1)" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M9 6l6 6-6 6"/></svg></button>
           </div>
         </div>
-        <div class="testi-track" id="testiTrack"></div>
+        <div class="testi-track stagger" id="testiTrack"></div>
       </div>
     </section>
 
-    <section class="sec sec-partners" id="partners">
+    <!-- Partners: plain -->
+    <section class="band" id="partners">
+      <div class="wrap rv">
+        <p class="eyebrow" data-i18n="partnersEyebrow">Партнёры</p>
+        <h2 data-i18n="partnersTitle">Технологии и бренды, с которыми мы работаем</h2>
+        <div class="partners-grid" id="partnersGrid">
+          <div class="partner-logo"><img src="images/partner-1c-logo.png" alt="1С" loading="lazy"></div>
+          <div class="partner-logo"><img src="images/partner-mobi-c.png" alt="Моби-С" loading="lazy"></div>
+          <div class="partner-logo"><img src="images/partner-turkmen-tranzit.webp" alt="Turkmen Tranzit" loading="lazy"></div>
+          <div class="partner-logo"><img src="images/partner-turkmen-terminal.png" alt="Turkmen Terminal" loading="lazy"></div>
+          <div class="partner-logo"><img src="images/partner-akylly-tilsimat.png" alt="Akylly Tilsimat" loading="lazy"></div>
+          <div class="partner-logo"><img src="images/partner-softclub.png" alt="SoftClub" loading="lazy"></div>
+          <div class="partner-logo"><img src="images/partner-mizoka.png" alt="Mizoka" loading="lazy"></div>
+          <div class="partner-logo"><img src="images/partner-dogrulyk.png" alt="Dogrulyk" loading="lazy"></div>
+          <div class="partner-logo"><img src="images/partner-ak-sahypa.png" alt="Ak Sahypa" loading="lazy"></div>
+          <div class="partner-logo"><img src="images/partner-lenovo.png" alt="Lenovo" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact: plain -->
+    <section class="band" id="contact">
+      <div class="grid contact-grid rv">
+        <div class="g-contact-l">
+          <p class="eyebrow" data-i18n="contactEyebrow">Контакты</p>
+          <h2 data-i18n="contactTitle">Оставьте заявку на консультацию</h2>
+          <p class="lede" data-i18n="contactSub">Заполните форму или напишите напрямую — ответим в течение рабочего дня.</p>
+
+          <div class="lead-card">
+            <form class="lead-form" id="mainForm" onsubmit="return handleSubmit(event,'main')">
+              <div class="form-row">
+                <div class="field">
+                  <label data-i18n="fName">Имя</label>
+                  <input type="text" name="name" required data-i18n-ph="fNamePh" placeholder="Ваше имя">
+                </div>
+                <div class="field">
+                  <label data-i18n="fPhone">Телефон</label>
+                  <input type="tel" name="phone" required data-i18n-ph="fPhonePh" placeholder="+998 __ ___ __ __">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="field">
+                  <label data-i18n="fEmail">Email</label>
+                  <input type="email" name="email" data-i18n-ph="fEmailPh" placeholder="email@company.uz">
+                </div>
+                <div class="field">
+                  <label data-i18n="fCompany">Компания</label>
+                  <input type="text" name="company" data-i18n-ph="fCompanyPh" placeholder="Название компании">
+                </div>
+              </div>
+              <div class="field">
+                <label data-i18n="fProduct">Какой продукт интересует</label>
+                <select name="product" id="mainProductSelect"></select>
+              </div>
+              <div class="field">
+                <label data-i18n="fMessage">Сообщение</label>
+                <textarea name="message" data-i18n-ph="fMessagePh" placeholder="Коротко опишите задачу"></textarea>
+              </div>
+              <p class="consent" data-i18n="fConsent">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
+              <button type="submit" class="btn btn-primary"><span data-i18n="fSubmit">Отправить заявку</span></button>
+            </form>
+            <div class="lead-success" id="mainSuccess">
+              <h3 data-i18n="successTitle">Заявка сформирована!</h3>
+              <p data-i18n="successText">Отправьте её нам одним из способов ниже — так мы получим её быстрее всего.</p>
+              <div class="ways">
+                <a class="btn btn-primary" id="mainTgLink" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.6 20c-.2 1-.9 1.2-1.8.8l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.3-4.9 9-8.1c.4-.3-.1-.5-.6-.2L6 12.1l-4.8-1.5c-1-.3-1-1 .2-1.5L20.6 3c.9-.3 1.6.2 1.3 1.3Z"/></svg><span data-i18n="viaTelegram">Написать в Telegram</span></a>
+                <a class="btn btn-ghost" id="mainWaLink" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.8 14.2c-.2.6-1.3 1.2-1.9 1.3-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.6-.6-2.9-1.3-4.8-4.2-4.9-4.4-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5.2.6.7 1.9.8 2 .1.2.1.4 0 .6-.1.2-.2.4-.3.5l-.5.5c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.2 2.4 1.5 2.7 1.7.3.2.5.1.6-.1l1-1.1c.2-.3.4-.2.7-.1l1.8.9c.2.1.4.2.4.4.1.2.1.9-.1 1.6Z"/></svg><span data-i18n="viaWhatsapp">Написать в WhatsApp</span></a>
+                <a class="btn btn-line" id="mainCallLink"><span data-i18n="viaCall">Позвонить</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-right g-contact-r">
+          <div class="contact-info">
+            <div class="info-row">
+              <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .7 3a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.2-1.3a2 2 0 0 1 2-.4c1 .3 2 .5 3 .7a2 2 0 0 1 1.7 2Z"/></svg></div>
+              <div><div class="lbl" data-i18n="cPhone">Телефон</div><div class="val" id="infoPhone">+998 90 000 00 00</div></div>
+            </div>
+            <div class="info-row">
+              <div class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.6 20c-.2 1-.9 1.2-1.8.8l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.3-4.9 9-8.1c.4-.3-.1-.5-.6-.2L6 12.1l-4.8-1.5c-1-.3-1-1 .2-1.5L20.6 3c.9-.3 1.6.2 1.3 1.3Z"/></svg></div>
+              <div><div class="lbl">Telegram</div><div class="val" id="infoTelegram">@gkrop26</div></div>
+            </div>
+            <div class="info-row">
+              <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div>
+              <div><div class="lbl">Email</div><div class="val" id="infoEmail">info@ideyaplus.uz</div></div>
+            </div>
+            <div class="info-row">
+              <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+              <div><div class="lbl" data-i18n="cHours">Часы работы</div><div class="val" data-i18n="cHoursVal">Круглосуточно</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div><!-- /zone-light -->
+
+    <!-- Footer -->
+    <footer>
       <div class="wrap">
-        <p class="eyebrow rv" data-i18n="partnersEyebrow">Партнёры</p>
-        <h3 class="h-md rv" data-i18n="partnersTitle">Технологии и бренды, с которыми мы работаем</h3>
-      </div>
-      <div class="partners-marquee"><div class="partners-grid" id="partnersGrid">
-        <div class="partner-logo"><img src="images/partner-1c-logo.png" alt="1С" loading="lazy"></div>
-        <div class="partner-logo"><img src="images/partner-mobi-c.png" alt="Моби-С" loading="lazy"></div>
-        <div class="partner-logo"><img src="images/partner-turkmen-tranzit.webp" alt="Turkmen Tranzit" loading="lazy"></div>
-        <div class="partner-logo"><img src="images/partner-turkmen-terminal.png" alt="Turkmen Terminal" loading="lazy"></div>
-        <div class="partner-logo"><img src="images/partner-akylly-tilsimat.png" alt="Akylly Tilsimat" loading="lazy"></div>
-        <div class="partner-logo"><img src="images/partner-softclub.png" alt="SoftClub" loading="lazy"></div>
-        <div class="partner-logo"><img src="images/partner-mizoka.png" alt="Mizoka" loading="lazy"></div>
-        <div class="partner-logo"><img src="images/partner-dogrulyk.png" alt="Dogrulyk" loading="lazy"></div>
-        <div class="partner-logo"><img src="images/partner-ak-sahypa.png" alt="Ak Sahypa" loading="lazy"></div>
-        <div class="partner-logo"><img src="images/partner-lenovo.png" alt="Lenovo" loading="lazy"></div>
-      </div></div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="sec" id="faq">
-      <div class="wrap faq-layout">
-        <div class="faq-side rv">
-          <p class="eyebrow" data-i18n="faqEyebrow">Вопросы</p>
-          <h2 data-i18n="faqTitle" data-split>Отвечаем на частые вопросы</h2>
-          <p class="lede" data-i18n="faqSub">Не нашли ответ? Напишите — ответим в течение рабочего дня.</p>
-          <button class="btn btn-primary" onclick="openLead('')" data-magnetic><span data-i18n="faqCta">Задать вопрос</span></button>
-        </div>
-        <div class="faq-list rv">
-          <details class="faq-item" open><summary><span data-i18n="q1">Сколько это стоит?</span><i></i></summary><div class="faq-a"><p data-i18n="a1">Стоимость рассчитывается индивидуально после бесплатного аудита: вы получаете понятное предложение до старта работ.</p></div></details>
-          <details class="faq-item"><summary><span data-i18n="q2">Входят ли лицензии 1С?</span><i></i></summary><div class="faq-a"><p data-i18n="a2">Лицензии 1С приобретаются отдельно у официальных партнёров в Узбекистане. Мы подскажем, какие именно лицензии нужны под вашу задачу.</p></div></details>
-          <details class="faq-item"><summary><span data-i18n="q3">Сколько занимает внедрение?</span><i></i></summary><div class="faq-a"><p data-i18n="a3">Срок зависит от масштаба и числа процессов. Оценку сроков даём по итогам аудита, когда понятен объём работ.</p></div></details>
-          <details class="faq-item"><summary><span data-i18n="q4">У нас уже есть 1С — вы можете подключиться?</span><i></i></summary><div class="faq-a"><p data-i18n="a4">Да. Проведём аудит текущей базы, настроим и доработаем систему и при необходимости возьмём на сопровождение.</p></div></details>
-          <details class="faq-item"><summary><span data-i18n="q5">Кто отвечает за результат?</span><i></i></summary><div class="faq-a"><p data-i18n="a5">Мы как компания. У проекта один ответственный контакт, а если потребуется — заменим сотрудника, и вам не придётся искать нового исполнителя.</p></div></details>
-          <details class="faq-item"><summary><span data-i18n="q6">Вы работаете только с 1С?</span><i></i></summary><div class="faq-a"><p data-i18n="a6">Да, мы специализируемся исключительно на 1С. Поэтому хорошо знаем продукт и типовые задачи разных отраслей.</p></div></details>
-          <details class="faq-item"><summary><span data-i18n="q7">Как начать?</span><i></i></summary><div class="faq-a"><p data-i18n="a7">Оставьте заявку или напишите нам: обсудим задачу и назначим бесплатный аудит.</p></div></details>
+        <div class="foot-brand"><img src="images/footer-logo.png" alt="" width="22" height="22">IDEYA PLUS</div>
+        <p class="foot-tagline" data-i18n="footTagline2">Belli Tilsimat — генеральный партнёр компании IDEYA PLUS · Резидент IT Park Uzbekistan · Выгодные условия для клиентов в Центральной Азии</p>
+        <div class="foot-row">
+          <span data-i18n="footCopy">© 2026 IDEYA PLUS. Все права защищены. ИНН 312959777.</span>
+          <span data-i18n="footNote">Материалы и опыт компании Belli Tilsimat (Туркменистан), адаптировано для рынка Узбекистана.</span>
         </div>
       </div>
-    </section>
-  </div>
+    </footer>
+  </main>
 
-  <!-- ============ FINAL CTA ============ -->
-  <section class="cta-final" id="cta">
-    <span class="ghost cta-ghost" aria-hidden="true" data-depth="0.06">AUDIT</span>
-    <div class="wrap cta-in">
-      <p class="eyebrow on-dark rv" data-i18n="ctaEyebrow">Начните сейчас</p>
-      <h2 class="cta-h2" data-i18n="ctaTitle" data-split>Начнём с бесплатного аудита?</h2>
-      <p class="lede on-dark rv" data-i18n="ctaText">Расскажите о задаче — предложим решение и рассчитаем стоимость. Ответим в течение рабочего дня.</p>
-      <div class="cta-btns rv">
-        <button class="btn btn-primary btn-lg" onclick="openLead('')" data-magnetic><span data-i18n="ctaBtn">Получить бесплатный аудит</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-        <a class="btn btn-ghost on-dark btn-lg" id="ctaTg" href="https://t.me/far_akhm" target="_blank" rel="noopener"><span data-i18n="ctaTg">Написать в Telegram</span></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ CONTACT ============ -->
-  <section class="sec contact-sec" id="contact">
-    <div class="wrap contact-grid">
-      <div class="contact-l rv">
-        <p class="eyebrow" data-i18n="contactEyebrow">Контакты</p>
-        <h2 data-i18n="contactTitle">Оставьте заявку — ответим в течение рабочего дня</h2>
-        <p class="lede" data-i18n="contactSub">Заполните форму или напишите напрямую.</p>
-
-        <div class="lead-card">
-          <form class="lead-form" id="mainForm" onsubmit="return handleSubmit(event,'main')">
-            <div class="form-row">
-              <div class="field"><label for="mName" data-i18n="fName">Имя</label><input id="mName" type="text" name="name" required autocomplete="name" data-i18n-ph="fNamePh" placeholder="Ваше имя"></div>
-              <div class="field"><label for="mPhone" data-i18n="fPhone">Телефон</label><input id="mPhone" type="tel" name="phone" required inputmode="tel" autocomplete="tel" data-phone data-i18n-ph="fPhonePh" placeholder="+998 __ ___ __ __"></div>
-            </div>
-            <div class="form-row">
-              <div class="field"><label for="mEmail" data-i18n="fEmail">Email</label><input id="mEmail" type="email" name="email" autocomplete="email" data-i18n-ph="fEmailPh" placeholder="email@company.uz"></div>
-              <div class="field"><label for="mCompany" data-i18n="fCompany">Компания</label><input id="mCompany" type="text" name="company" autocomplete="organization" data-i18n-ph="fCompanyPh" placeholder="Название компании"></div>
-            </div>
-            <div class="field"><label for="mainProductSelect" data-i18n="fProduct">Какой продукт интересует</label><select name="product" id="mainProductSelect"></select></div>
-            <div class="field"><label for="mMsg" data-i18n="fMessage">Сообщение</label><textarea id="mMsg" name="message" data-i18n-ph="fMessagePh" placeholder="Коротко опишите задачу"></textarea></div>
-            <p class="consent" data-i18n="fConsent">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
-            <button type="submit" class="btn btn-primary btn-lg" data-magnetic><span data-i18n="fSubmit">Отправить заявку</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-          </form>
-          <div class="lead-success" id="mainSuccess">
-            <div class="ok-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg></div>
-            <h3 id="mainSuccessTitle" data-i18n="successTitle">Спасибо! Заявка принята</h3>
-            <p id="mainSuccessText" data-i18n="successText">Мы свяжемся с вами в течение рабочего дня. Хотите быстрее — напишите нам напрямую:</p>
-            <div class="ways">
-              <a class="btn btn-primary" id="mainTgLink" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.6 20c-.2 1-.9 1.2-1.8.8l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.3-4.9 9-8.1c.4-.3-.1-.5-.6-.2L6 12.1l-4.8-1.5c-1-.3-1-1 .2-1.5L20.6 3c.9-.3 1.6.2 1.3 1.3Z"/></svg><span data-i18n="viaTelegram">Написать в Telegram</span></a>
-              <a class="btn btn-ghost" id="mainWaLink" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.8 14.2c-.2.6-1.3 1.2-1.9 1.3-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.6-.6-2.9-1.3-4.8-4.2-4.9-4.4-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5.2.6.7 1.9.8 2 .1.2.1.4 0 .6-.1.2-.2.4-.3.5l-.5.5c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.2 2.4 1.5 2.7 1.7.3.2.5.1.6-.1l1-1.1c.2-.3.4-.2.7-.1l1.8.9c.2.1.4.2.4.4.1.2.1.9-.1 1.6Z"/></svg><span data-i18n="viaWhatsapp">Написать в WhatsApp</span></a>
-              <a class="btn btn-line" id="mainCallLink"><span data-i18n="viaCall">Позвонить</span></a>
-            </div>
-          </div>
+  <!-- FAB -->
+  <!-- Lead modal -->
+  <div id="modalBackdrop" style="display:none;position:fixed;inset:0;background:rgba(21,18,12,.6);z-index:80;align-items:center;justify-content:center;padding:20px" onclick="if(event.target===this)closeLead()">
+    <div style="max-width:460px;width:100%;max-height:90vh;overflow:auto;border-radius:20px;background:var(--paper);padding:30px;box-shadow:var(--shadow)">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">
+        <div>
+          <p class="eyebrow" style="margin-bottom:6px" data-i18n="modalEyebrow">Быстрая заявка</p>
+          <h3 style="font-family:var(--disp);font-size:1.25rem" data-i18n="modalTitle">Оставьте контакты</h3>
         </div>
+        <button onclick="closeLead()" aria-label="Close" style="border:none;background:transparent;width:34px;height:34px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg></button>
       </div>
-
-      <aside class="contact-r rv">
-        <div class="contact-info">
-          <div class="info-row">
-            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .7 3a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.2-1.3a2 2 0 0 1 2-.4c1 .3 2 .5 3 .7a2 2 0 0 1 1.7 2Z"/></svg></div>
-            <div><div class="lbl" data-i18n="cPhone">Телефон</div><div class="val" id="infoPhone"><a href="tel:+998770971437">+998 77 097 14 37</a> <span class="role" data-i18n="phoneRole">— коммерческий директор</span></div></div>
-          </div>
-          <div class="info-row">
-            <div class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.6 20c-.2 1-.9 1.2-1.8.8l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.3-4.9 9-8.1c.4-.3-.1-.5-.6-.2L6 12.1l-4.8-1.5c-1-.3-1-1 .2-1.5L20.6 3c.9-.3 1.6.2 1.3 1.3Z"/></svg></div>
-            <div><div class="lbl">Telegram</div><div class="val" id="infoTelegram"><a href="https://t.me/far_akhm" target="_blank" rel="noopener">@far_akhm</a> <span class="role" data-i18n="phoneRole">— коммерческий директор</span></div></div>
-          </div>
-          <div class="info-row">
-            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div>
-            <div><div class="lbl">Email</div><div class="val"><a id="infoEmail" href="mailto:info@ideyaplus.uz">info@ideyaplus.uz</a></div></div>
-          </div>
-          <div class="info-row">
-            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
-            <div><div class="lbl" data-i18n="cHours">Часы работы</div><div class="val" data-i18n="cHoursVal">Круглосуточно</div></div>
-          </div>
+      <form class="lead-form" id="modalForm" onsubmit="return handleSubmit(event,'modal')">
+        <div class="field">
+          <label data-i18n="fName">Имя</label>
+          <input type="text" name="name" required data-i18n-ph="fNamePh" placeholder="Ваше имя">
         </div>
-      </aside>
-    </div>
-  </section>
-
-  <!-- ============ FOOTER ============ -->
-  <footer>
-    <div class="wrap">
-      <div class="foot-brand"><img src="images/footer-logo.png" alt="" width="26" height="26">IDEYA PLUS</div>
-      <p class="foot-tagline" data-i18n="footTagline2">Belli Tilsimat — генеральный партнёр компании IDEYA PLUS · Резидент IT Park Uzbekistan · Выгодные условия для клиентов в Центральной Азии</p>
-      <div class="foot-row">
-        <span data-i18n="footCopy">© 2026 IDEYA PLUS. Все права защищены. ИНН 312959777.</span>
-        <span data-i18n="footNote">Опыт и материалы компании Belli Tilsimat (Туркменистан), адаптировано для рынка Узбекистана.</span>
-      </div>
-    </div>
-  </footer>
-</main>
-
-<!-- Lead modal -->
-<div id="modalBackdrop" class="modal-bd" onclick="if(event.target===this)closeLead()" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-  <div class="modal">
-    <div class="modal-head">
-      <div>
-        <p class="eyebrow" data-i18n="modalEyebrow">Бесплатный аудит</p>
-        <h3 id="modalTitle" data-i18n="modalTitle">Оставьте контакты</h3>
-      </div>
-      <button class="modal-x" onclick="closeLead()" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg></button>
-    </div>
-    <form class="lead-form" id="modalForm" onsubmit="return handleSubmit(event,'modal')">
-      <div class="field"><label for="qName" data-i18n="fName">Имя</label><input id="qName" type="text" name="name" required autocomplete="name" data-i18n-ph="fNamePh" placeholder="Ваше имя"></div>
-      <div class="field"><label for="qPhone" data-i18n="fPhone">Телефон</label><input id="qPhone" type="tel" name="phone" required inputmode="tel" autocomplete="tel" data-phone data-i18n-ph="fPhonePh" placeholder="+998 __ ___ __ __"></div>
-      <div class="field"><label for="modalProductSelect" data-i18n="fProduct">Какой продукт интересует</label><select name="product" id="modalProductSelect"></select></div>
-      <button type="submit" class="btn btn-primary btn-lg"><span data-i18n="fSubmit">Отправить заявку</span></button>
-    </form>
-    <div class="lead-success" id="modalSuccess">
-      <div class="ok-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg></div>
-      <h3 id="modalSuccessTitle" data-i18n="successTitle">Спасибо! Заявка принята</h3>
-      <p id="modalSuccessText" data-i18n="successText">Мы свяжемся с вами в течение рабочего дня. Хотите быстрее — напишите нам напрямую:</p>
-      <div class="ways">
-        <a class="btn btn-primary" id="modalTgLink" target="_blank" rel="noopener"><span data-i18n="viaTelegram">Написать в Telegram</span></a>
-        <a class="btn btn-ghost" id="modalWaLink" target="_blank" rel="noopener"><span data-i18n="viaWhatsapp">Написать в WhatsApp</span></a>
-        <a class="btn btn-line" id="modalCallLink"><span data-i18n="viaCall">Позвонить</span></a>
+        <div class="field">
+          <label data-i18n="fPhone">Телефон</label>
+          <input type="tel" name="phone" required data-i18n-ph="fPhonePh" placeholder="+998 __ ___ __ __">
+        </div>
+        <div class="field">
+          <label data-i18n="fProduct">Какой продукт интересует</label>
+          <select name="product" id="modalProductSelect"></select>
+        </div>
+        <button type="submit" class="btn btn-primary"><span data-i18n="fSubmit">Отправить заявку</span></button>
+      </form>
+      <div class="lead-success" id="modalSuccess">
+        <h3 data-i18n="successTitle">Заявка сформирована!</h3>
+        <p data-i18n="successText">Отправьте её нам одним из способов ниже — так мы получим её быстрее всего.</p>
+        <div class="ways">
+          <a class="btn btn-primary" id="modalTgLink" target="_blank" rel="noopener"><span data-i18n="viaTelegram">Написать в Telegram</span></a>
+          <a class="btn btn-ghost" id="modalWaLink" target="_blank" rel="noopener"><span data-i18n="viaWhatsapp">Написать в WhatsApp</span></a>
+          <a class="btn btn-line" id="modalCallLink"><span data-i18n="viaCall">Позвонить</span></a>
+        </div>
       </div>
     </div>
   </div>
 </div>
-
 <script src="script.js"></script>
 </body>
 </html>
